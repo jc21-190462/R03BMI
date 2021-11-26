@@ -33,7 +33,6 @@ namespace R03BMI
                     w = w / 1000;
                 }
                 double b = w / (h * h);
-                Console.WriteLine(Math.Round(b, 1, MidpointRounding.AwayFromZero));
                 string s = null;
                 if (b > 18.5)
                 {
@@ -59,6 +58,7 @@ namespace R03BMI
                 {
                     s = "肥満（4度）";
                 }}}}}}
+　　　　　　　　Console.WriteLine(Math.Round(b, 1, MidpointRounding.AwayFromZero));
                 result.Text =b + s;
             }
             catch (FormatException ex)
