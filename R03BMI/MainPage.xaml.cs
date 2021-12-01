@@ -32,36 +32,36 @@ namespace R03BMI
                 {
                     w = w / 1000;
                 }
-                double b = w / (h * h);
-                int b2 = (int)b * 10;
-                double b3 = (double)b2 / 10;
+                double b = Math.Round(w /(h*h),1);
+                //int b2 = (int)b * 10;
+                //double b3 = (double)b2 / 10;
                 string s = null;
-                if (b3 > 18.5)
+                if (b > 18.5)
                 {
                     s = "低体重（痩せ）";
                 }else{
-                if (b3 > 25.0)
+                if (b > 25.0)
                 {
                     s = "普通体重";
                 }else{
-                if (b3 > 30.0)
+                if (b > 30.0)
                 {
                     s = "肥満（1度）";
                 }else{
-                if (b3 > 35.0)
+                if (b > 35.0)
                 {
                     s = "肥満（2度）";
                 }else{
-                if (b3 > 40.0)
+                if (b > 40.0)
                 {
                     s = "肥満（3度）";
                 }else{
-                if (b3 >= 40.0)
+                if (b >= 40.0)
                 {
                     s = "肥満（4度）";
                 }}}}}}
 　　　　　　　　Console.WriteLine(Math.Round(b, 1, MidpointRounding.AwayFromZero));
-                result.Text =b3 + s;
+                result.Text =b + s;
             }
             catch (FormatException ex)
             {
