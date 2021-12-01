@@ -60,7 +60,6 @@ namespace R03BMI
                 {
                     s = "肥満（4度）";
                 }
-　　　　　　　　Console.WriteLine(Math.Round(b, 1, MidpointRounding.AwayFromZero));
                 result.Text =b + s;
             }
             catch (FormatException ex)
