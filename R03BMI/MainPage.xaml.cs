@@ -18,8 +18,8 @@ namespace R03BMI
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            string height = heighit.Placeholder;
-            string weight = weighit.Placeholder;
+            String height = heighit.Text;
+            String weight = weighit.Text;
             try
             {
                 double h = double.Parse(height);
@@ -35,7 +35,7 @@ namespace R03BMI
                 double b = Math.Round(w / ( h * h ) , 1);
                 //int b2 = (int)b * 10;
                 //double b3 = (double)b2 / 10;
-                string s = null;
+                String s = null;
                 if (b < 18.5){
                     s = "低体重（痩せ）";
                 }else if (b < 25.0){
