@@ -36,7 +36,7 @@ namespace R03BMI
                 int b2 = (int)b * 10;
                 double b3 = (double)b2 / 10;
                 string s = null;
-                if (3b > 18.5)
+                if (b3 > 18.5)
                 {
                     s = "低体重（痩せ）";
                 }else{
@@ -44,7 +44,7 @@ namespace R03BMI
                 {
                     s = "普通体重";
                 }else{
-                if (3b > 30.0)
+                if (b3 > 30.0)
                 {
                     s = "肥満（1度）";
                 }else{
